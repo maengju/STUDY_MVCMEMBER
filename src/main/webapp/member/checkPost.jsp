@@ -60,14 +60,21 @@ td {
 		<c:if test="${list != null }">
 			<c:forEach var="zipcodeDTO" items="${requestScope.list }">
 				<c:set var="address">
-					${zipcodeDTO.sido } ${zipcodeDTO.sigungu } ${zipcodeDTO.yubmyundong } ${zipcodeDTO.ri } ${zipcodeDTO.roadname } ${zipcodeDTO.buildingname }
+					${zipcodeDTO.sido 
+					} ${zipcodeDTO.sigungu 
+					} ${zipcodeDTO.yubmyundong 
+					} ${zipcodeDTO.ri 
+					} ${zipcodeDTO.roadname 
+					} ${zipcodeDTO.buildingname }
 				</c:set>
 				
 				<tr>
 					<td align="center">${zipcodeDTO.zipcode }</td>
+					
 					<td colspan="3">
-						<a href="#" id="addressA" 
-						onclick="checkPostClose('${zipcodeDTO.zipcode }','${address }')">${address }</a>
+						<%-- <a href="#" onclick="checkPostClose('${zipcodeDTO.zipcode }','${address }')">${address }</a> --%>
+						
+						<a href="#" class="addressA">${address }</a>
 					</td>
 				</tr>
 			</c:forEach>
@@ -77,6 +84,7 @@ td {
 </form>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../js/member.js"></script>
 <script type="text/javascript">
 function checkPostClose(zipcode, address) {
 	opener.writeForm.zipcode.value = zipcode;

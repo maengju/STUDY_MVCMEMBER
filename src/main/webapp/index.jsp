@@ -19,11 +19,11 @@
 <c:if test="${sessionScope.memId != null }">
 	<a href="/mvcmember/member/logout.do">로그아웃</a><br>
 	<a href="">회원정보수정</a><br>
-	<a href="">글쓰기</a><br>
+	<a href="/mvcmember/board/boardWriteForm.do">글쓰기</a><br>
 </c:if>
 
-<a href="">목록</a><br>
-<a href=""></a><br>
+<a href="/mvcmember/board/boardList.do?pg=1">목록</a><br>
+
 
 </body>
 </html>

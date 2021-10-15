@@ -36,7 +36,7 @@ div {
 			<td colspan="2" align="center">
 				<input type="button" id="loginBtn" value="로그인">
 				<input type="button" value="회원가입" 
-				onclick="location.href='writeForm.html'">
+				onclick="location.href='/mvcmember/member/writeForm.do'">
 			</td>
 		</tr>
 	</table>

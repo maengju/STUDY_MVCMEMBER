@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원가입</title>
+<title>Insert title here</title>
 <style type="text/css">
 div {
 	color: red;
@@ -12,8 +12,10 @@ div {
 	font-weight: bold;
 }
 </style>
+
 </head>
 <body>
+
 <form name="writeForm" method="post" action="/mvcmember/member/write.do">
 	<table border="1" cellspacing="0" cellpadding="5">
 		<tr>
@@ -27,9 +29,7 @@ div {
 		<tr>
 			<td width="100" align="center">아이디</td>
 			<td>
-				<input type="text" name="id" id="id" placeholder="아이디 입력">
-				<input type="button" value="중복체크" id="checkIdBtn">
-				<input type="text" id="check" value="">
+				<input type="text" name="id" id="id" value="maeng" readonly>
 				<div id= "idDiv"></div>
 			</td>	
 		</tr>
@@ -53,7 +53,7 @@ div {
 		<tr>
 			<td width="100" align="center">성별</td>
 			<td>
-				<input type="radio" name="gender" value="0" checked>남
+				<input type="radio" name="gender" value="0">남
 				<input type="radio" name="gender" value="1">여
 			</td>
 		</tr>
@@ -99,7 +99,7 @@ div {
 		
 		<tr>
 			<td colspan="2" align="center">
-				<input type="button" id="writeBtn" value="회원가입">
+				<input type="button" id="writeBtn" value="회원수정">
 				<input type="reset" value="다시작성">
 			</td>
 		</tr>
@@ -107,17 +107,10 @@ div {
 </form>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../js/member.js"></script>
+<script type="text/javascript">
+
+</script>
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
